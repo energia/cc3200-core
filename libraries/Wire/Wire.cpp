@@ -69,9 +69,7 @@ uint8_t TwoWire::I2CTransact(unsigned long ulCmd)
 	MAP_I2CMasterControl(I2C_BASE, ulCmd);
 
 	while((MAP_I2CMasterIntStatusEx(I2C_BASE, false)
-			& (I2C_INT_MASTER | I2C_MRIS_CLKTOUT)) == 0) {
-		if(!MAP_I2CMasterBusy(I2C_BASE)) return -1;
-	}
+			& (I2C_INT_MASTER | I2C_MRIS_CLKTOUT)) == 0) { }
 
 	/* Check for any errors in transfer */
 	if(MAP_I2CMasterErr(I2C_BASE) != I2C_MASTER_ERR_NONE) {
