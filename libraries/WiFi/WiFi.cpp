@@ -217,6 +217,8 @@ int WiFiClass::begin()
     int8_t name[32];
     int16_t NameLen;
 
+    role = ROLE_STA;
+
     if(_connecting) {
         delay(500);
         return status();
@@ -244,6 +246,8 @@ int WiFiClass::begin()
 //--tested, working--//
 int WiFiClass::begin(char* ssid)
 {
+    role = ROLE_STA;
+
     //
     // If we already called begin and are already connecting
     // then return the status. This prevents sl_WlanConnect() 
@@ -303,6 +307,8 @@ int WiFiClass::begin(char* ssid)
 //!!Ignore key index!!//
 int WiFiClass::begin(char* ssid, uint8_t key_idx, char* key)
 {
+    role = ROLE_STA;
+
     //
     // If we already called begin and are already connecting
     // then return the status. This prevents sl_WlanConnect() 
@@ -364,6 +370,8 @@ int WiFiClass::begin(char* ssid, uint8_t key_idx, char* key)
 //--tested, working--//
 int WiFiClass::begin(char* ssid, char *passphrase)
 {
+    role = ROLE_STA;
+
     //
     // If we already called begin and are already connecting
     // then return the status. This prevents sl_WlanConnect() 
