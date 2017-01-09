@@ -9,7 +9,6 @@ CC3200-LAUNCHXL.build.board=CC3200-LAUNCHXL
 CC3200-LAUNCHXL.build.mcu=cortex-m4
 CC3200-LAUNCHXL.upload.tool=cc3200prog
 CC3200-LAUNCHXL.upload.protocol=cc3200prog
-#CC3200-LAUNCHXL.upload.maximum_ram_size=32768
 ##############################################################
 
 CC3200-RBL.name=RedBearLab CC3200 (80MHz)
@@ -23,7 +22,6 @@ CC3200-RBL.build.board=RedBearLab_CC3200
 CC3200-RBL.build.mcu=cortex-m4
 CC3200-RBL.upload.tool=cc3200prog
 CC3200-RBL.upload.protocol=cc3200prog
-#CC3200-RBL.upload.maximum_ram_size=32768
 ##############################################################
 
 CC3200-RBL-MINI.name=RedBearLab WiFi Mini w/ CC3200 (80MHz)
@@ -37,7 +35,6 @@ CC3200-RBL-MINI.build.board=RedBearLab_WiFiMini
 CC3200-RBL-MINI.build.mcu=cortex-m4
 CC3200-RBL-MINI.upload.tool=cc3200prog
 CC3200-RBL-MINI.upload.protocol=cc3200prog
-#CC3200-RBL.upload.maximum_ram_size=32768
 ##############################################################
 
 CC3200-RBL-MICRO.name=RedBearLab WiFi Micro w/ CC3200 (80MHz)
@@ -51,5 +48,4 @@ CC3200-RBL-MICRO.build.board=RedBearLab_WiFiMicro
 CC3200-RBL-MICRO.build.mcu=cortex-m4
 CC3200-RBL-MICRO.upload.tool=cc3200prog
 CC3200-RBL-MICRO.upload.protocol=cc3200prog
-#CC3200-RBL-MICRO.upload.maximum_ram_size=32768
 ##############################################################
