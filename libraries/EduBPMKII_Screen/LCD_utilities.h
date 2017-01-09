@@ -1,7 +1,7 @@
 ///
 /// @file       LCD_utilities.h
 /// @brief      Library header
-/// @detailsUtilities for LCD_screen
+/// @details.   Utilities for LCD_screen
 /// @n
 /// @n @b       Project LCD_screen
 /// @n @a       Developed with [embedXcode](http://embedXcode.weebly.com)
