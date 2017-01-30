@@ -1,7 +1,7 @@
 ///
 /// @file       LCD_screen.h
 /// @brief      Class library header
-/// @detailsGeneric LCD class library
+/// @details    Generic LCD class library
 /// @n
 /// @n @b       Project LCD_screen
 /// @n @a       Developed with [embedXcode](http://embedXcode.weebly.com)
