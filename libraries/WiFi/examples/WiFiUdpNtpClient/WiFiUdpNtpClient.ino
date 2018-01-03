@@ -32,7 +32,7 @@ char password[] = "launchpad";
 
 unsigned int localPort = 2390;      // local port to listen for UDP packets
 
-IPAddress timeServer(206,246,122,250); // time.nist.gov NTP server
+char timeServer[] = "time.nist.gov"; // time.nist.gov NTP server
 
 const int NTP_PACKET_SIZE = 48; // NTP time stamp is in the first 48 bytes of the message
 
@@ -128,7 +128,7 @@ void loop()
 }
 
 // send an NTP request to the time server at the given address
-unsigned long sendNTPpacket(IPAddress& address)
+unsigned long sendNTPpacket(const char *address)
 {
   //Serial.println("1");
   // set all bytes in the buffer to 0

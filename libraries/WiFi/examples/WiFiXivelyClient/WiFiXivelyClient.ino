@@ -43,8 +43,8 @@ char password[] = "launchpad";
 WiFiClient client;
 // if you don't want to use DNS (and reduce your sketch size)
 // use the numeric IP instead of the name for the server:
-IPAddress server(216,52,233,121);      // numeric IP for api.xively.com
-//char server[] = "api.xively.com";   // name address for xively API
+//IPAddress server(216,52,233,121);      // numeric IP for api.xively.com
+char server[] = "api.xively.com";   // name address for xively API
 
 unsigned long lastConnectionTime = 0;          // last time you connected to the server, in milliseconds
 boolean lastConnected = false;                 // state of the connection last time through the main loop
