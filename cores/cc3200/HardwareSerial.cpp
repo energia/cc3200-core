@@ -160,7 +160,7 @@ HardwareSerial::primeTransmit(unsigned long ulBase)
 		while(!TX_BUFFER_EMPTY){
 			if (MAP_UARTSpaceAvail(ulBase)) {
 				/* Disable TX IRQ while stuffing the FIFO to avoid a race condition
-				/* on the txReadIndex variable
+				 * on the txReadIndex variable
 				 */
 				MAP_UARTIntDisable(UART_BASE, UART_INT_TX);
 				while(MAP_UARTSpaceAvail(ulBase) && !TX_BUFFER_EMPTY){
